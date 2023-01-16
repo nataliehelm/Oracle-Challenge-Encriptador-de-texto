@@ -1,0 +1,140 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background: #F3F5FC;
+
+}
+
+.container{
+    display: flex;
+}
+
+.left-container{
+    width: 70%;
+}
+
+.logo {
+    margin: 40px;
+}
+
+.text-container{
+    margin: 0 80px 0 240px;
+}
+
+.text-area {
+    font-family: 'Inter', sans-serif;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    outline: none;
+    font-size: 32px;
+    color: #0A3871;
+}
+.text-area::placeholder {
+    opacity: 1;
+}
+.text-area::-moz-placeholder {
+    opacity: 1;;
+}
+
+.text-container p{
+    font-size: 12px;
+    color: #495057;
+    display: flex;
+}
+
+.text-container p>span{
+    color: #F3F5FC;
+    width: 1.2em;
+    height: 1.2em;
+    background: #495057;
+    border-radius: 50%;
+    justify-content: center;
+	align-items: center;
+	text-align: center;
+    display: flex;
+    font-size: 10px;
+    margin: 0 3px 3px 0;
+}
+.buttons{
+    margin: 16px 0px 72px;
+}
+
+.encriptar-button{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    color: #ffffff;
+    font-size: 16px;
+    background: #0A3871;
+    border: none; 
+    margin-right: 20px;
+}
+
+.desencriptar-button{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    color: #0A3871;
+    font-size: 16px;
+    background: #D8DFE8;
+    border: 1px solid rgba(10, 56, 113, 1);
+}
+.right-container{
+    width: 30%;
+    margin-top: 40px;
+}
+
+.decryption-container{
+    width: 400px;
+    height: 83%;
+    background: #ffffff;
+    border-radius: 32px;
+    padding: 40px 0px;
+    text-align: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+
+}
+
+.message-not-found{
+    margin-top: 50%;
+    margin-bottom: 32px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+    padding: 10px 20px;
+}
+
+.decryption-container p{
+    font-size: 16px;
+    color: #495057;
+    padding: 10px 20px;
+}
+
+footer {
+    width: 100%;
+    background-color: #D8DFE8 ;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+.github {
+    padding: 8px 0;
+}
+
+.github img{
+    width: 16px;
+    height: 16px;
+    
+}
