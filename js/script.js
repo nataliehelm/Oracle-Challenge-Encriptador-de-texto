@@ -23,6 +23,7 @@ function encriptar() {
 
   if (hasError) {
     errorContainer.style.display = "block";
+    copyContainer.style.display = "none";
     return;
   }
 
@@ -53,6 +54,7 @@ function desencriptar() {
 
   if (hasError) {
     errorContainer.style.display = "block";
+    copyContainer.style.display = "none";
     return;
   }
   if (encryptedMessage == "") {
@@ -61,7 +63,7 @@ function desencriptar() {
   }
   responseContainer.style.display = "block";
 
-  var newResponse = encryptedMessage
+  var newMessage = encryptedMessage
     .replace(/enter/gim, "e")
     .replace(/imes/gim, "i")
     .replace(/ober/gim, "o")
