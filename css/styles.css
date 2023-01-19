@@ -233,6 +233,9 @@ footer {
 }
 
 @media (max-width: 468px){
+    .logo{
+        margin: 30px 0;
+    }
     .right-container{
         padding: 0px;
     }
@@ -240,7 +243,7 @@ footer {
         margin: 0 16px 0 16px;
     }
     .text-area{
-        height: 300px;
+        height: 230px;
     }
     .buttons{
         display: flex;
