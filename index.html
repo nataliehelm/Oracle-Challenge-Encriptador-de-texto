@@ -22,24 +22,35 @@
             <main>
                 <div class="text-container">
                     <section>
-                        <textarea placeholder="Ingrese el texto aqui" class="text-area"></textarea>
+                        <textarea placeholder="Ingrese el texto aqui" class="text-area" onkeyup=(this.value)></textarea>
                         <p><span>! </span> Sólo letras minúsculas y sin acentos</p>
                     </section>
                     <section class="buttons">
-                        <button type="button" class="encriptar-button">Encriptar</button>
-                        <button type="button" class="desencriptar-button">Desencriptar</button>
+                        <button type="button" class="encrypt-button">Encriptar</button>
+                        <button type="button" class="decrypt-button">Desencriptar</button>
+                        <button type="button" class="reset-button">Resetear</button>
                     </section>
                 </div>
         </div>
         <div class="right-container">
             <div class="decryption-container">
-                <div class="message-not-found">
-                    <img src="img/person.png" alt="Persona realizando una busqueda" class="message-image">
+                <div id="message">
+                    <div class="message-not-found">
+                        <img src="img/person.png" alt="Persona realizando una busqueda" class="message-image">
+                    </div>
+                    <h2 class="message-title">Ningun mensaje fue encontrado</h2>
+                    <p class="message-text">Ingresa el texto que deseas encriptar o desencriptar</p>
                 </div>
-                <h2>Ningun mensaje fue encontrado</h2>
-                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                <div id="error">
+                    <h2 class="message-title">El mensaje no pudo ser procesado</h2>
+                    <p class="message-text">Por favor revisa que no hayas incluido ninguna letra mayúscula, acento y/o
+                        caracteres especiales.</p>
+                </div>
+                <div id="response"></div>
+                <div id="copy-button">
+                    <button type="button" class="copy-button">Copiar</button>
+                </div>
             </div>
-
             </main>
         </div>
     </div>
@@ -52,3 +63,4 @@
 </body>
 
 </html>
+<script src="js/script.js"></script>

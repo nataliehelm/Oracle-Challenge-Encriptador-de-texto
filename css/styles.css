@@ -6,6 +6,7 @@ body{
 
 .container{
     display: flex;
+    overflow: hidden;
 }
 
 .left-container{
@@ -62,26 +63,43 @@ body{
     margin: 16px 0px 72px;
 }
 
-.encriptar-button{
-    width: 328px;
-    height: 67px;
+.encrypt-button{
+    width: 288px;
+    height: 63px;
     border-radius: 24px;
     color: #ffffff;
     font-size: 16px;
     background: #0A3871;
     border: none; 
     margin-right: 20px;
+    cursor: pointer;
 }
 
-.desencriptar-button{
-    width: 328px;
-    height: 67px;
+.decrypt-button{
+    width: 288px;
+    height: 63px;
     border-radius: 24px;
     color: #0A3871;
     font-size: 16px;
     background: #D8DFE8;
     border: 1px solid rgba(10, 56, 113, 1);
+    cursor: pointer;
+    background: none;
+    margin-right: 20px;
 }
+
+.reset-button{
+    width: 288px;
+    height: 63px;
+    border-radius: 24px;
+    color: #0A3871;
+    font-size: 16px;
+    background: #D8DFE8;
+    border: 1px solid rgba(10, 56, 113, 1);
+    cursor: pointer;
+    background: #D8DFE8;
+}
+
 .right-container{
     width: 30%;
     margin-top: 40px;
@@ -111,10 +129,35 @@ h2 {
     padding: 10px 20px;
 }
 
-.decryption-container p{
+.message-text{
     font-size: 16px;
     color: #495057;
     padding: 10px 20px;
+}
+#error, #copy-button {
+    display: none;
+}
+
+#response{
+    display: none;
+    height: 93%;
+}
+
+.response-text{
+    font-size: 24px;
+    color: #495057;
+    padding: 10px 20px;
+}
+
+.copy-button{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    color: #0A3871;
+    font-size: 16px;
+    background: none;
+    border: 1px solid rgba(10, 56, 113, 1);
+    cursor: pointer;
 }
 
 footer {
@@ -137,4 +180,88 @@ footer {
     width: 16px;
     height: 16px;
     
+}
+
+@media (max-width: 810px){
+
+    .container{
+        flex-direction: column;
+    }
+    .left-container, .right-container{
+    width: 100%;
+    }
+    .right-container{
+        padding: 40px;
+        margin: 0;
+    }
+    .logo{
+        margin: 73px 0;
+    }
+    .text-container{
+        margin: 0 40px 0 40px;
+    }
+    .buttons{
+        margin: 16px auto;
+    }
+    .encrypt-button, .decrypt-button, .reset-button{
+        width: 30%;
+        margin: 5px;
+    }
+    .decryption-container{
+        width: 85%;
+        padding: 20px;
+    }
+    .message-not-found{
+        margin: 12px;
+    }
+    .message-image{
+        display: none;
+    }
+    #response{
+        margin-bottom: 20px;
+        padding: 8px;
+    }
+    #copy-button{
+        padding: 0 12px;
+    }
+    .copy-button{
+        width: 100%;
+    }
+    footer {
+        position: relative;
+    }
+}
+
+@media (max-width: 468px){
+    .right-container{
+        padding: 0px;
+    }
+    .text-container {
+        margin: 0 16px 0 16px;
+    }
+    .text-area{
+        height: 300px;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 16px 16px 16px 0;
+        margin: 0;
+    }
+    .encrypt-button, .decrypt-button, .reset-button{
+        width: 100%;
+        margin: 0;
+    }  
+    .decryption-container{
+        margin: 16px;
+        width: auto;
+        padding: 0;
+    }
+    #message{
+        padding: 12px;
+    }
+    .copy-button{
+        margin-bottom: 12px;
+    }
 }
