@@ -64,7 +64,7 @@ body{
 }
 
 .encrypt-button{
-    width: 288px;
+    width: 30%;
     height: 63px;
     border-radius: 24px;
     color: #ffffff;
@@ -76,7 +76,7 @@ body{
 }
 
 .decrypt-button{
-    width: 288px;
+    width: 30%;
     height: 63px;
     border-radius: 24px;
     color: #0A3871;
@@ -89,7 +89,7 @@ body{
 }
 
 .reset-button{
-    width: 288px;
+    width: 30%;
     height: 63px;
     border-radius: 24px;
     color: #0A3871;
