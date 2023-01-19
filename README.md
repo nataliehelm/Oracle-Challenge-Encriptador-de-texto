@@ -1,6 +1,6 @@
 # Encriptador de Texto
 
-Este encriptador de texto es parte del challenge Oracle ONE + Alura para la formación Principiante en Programación.
+Este encriptador de texto es parte del challenge Oracle ONE + Alura para la formación Principiante en Programación. Permite encriptar y desencriptar un texto. Incluye opción para copiar el texto devuelto como respuesta y botón para resetear el texto.
 
 ## Tecnologías
 
