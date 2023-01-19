@@ -71,7 +71,7 @@ function desencriptar() {
     .replace(/ufat/gim, "u");
 
   copyContainer.style.display = "block";
-  responseContainer.innerHTML = `<p class="response-text">${newResponse}</p>`;
+  responseContainer.innerHTML = `<p class="response-text">${newMessage}</p>`;
 }
 
 function copiar() {
@@ -85,6 +85,7 @@ function resetear() {
   responseContainer.style.display = "none";
   copyContainer.style.display = "none";
   messageContainer.style.display = "block";
+  errorContainer.style.display = "none";
 }
 
 encryptButton.onclick = encriptar;
